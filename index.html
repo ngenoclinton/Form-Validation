@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="container">
+            <img class="image" id="image">
+                <!-- <img src=" " alt=""></img> -->
+        </div>
+        <div class="form">
+            <div class="form-info">
+                <p></p>
+            </div>
+            <form id="registrationForm" class="">
+                <h1>Lets do this</h1>
+
+               <div class="inputs">
+                <div class="email">
+                    <span id="emailError" class="error"></span><br>
+                    <input type="email" id="email" class="form-input" placeholder="Enter Email" > 
+                    <label class="form-label">Email:</label><br>
+                    
+                </div>
+
+                <div class="phone">
+                    <span id="phoneError" class="error"></span><br>
+                    <input type="text" class="form-input" id="phone" placeholder="Phone" />
+                    <label for="phone" class="form-label">Phone:</label>
+                </div>
+
+                <div class="select-country">
+                    <span id="countryError" class="error" style="padding-left:100px"></span><br>
+                    <select id="country" class="form-input">
+                        <option value="">--Select Country--</option>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UK">Kenya</option>
+                        <option value="UK">UK</option>
+                        <!-- Add more options as needed -->
+                      </select>
+                      <label class="form-label">Country:</label><br>
+                </div>
+  
+                <div class="zip-code">
+                    <span id="zipError" class="error"></span><br>
+                    <input type="text" id="zip" placeholder="Zip Code" class="form-input"> 
+                    <label class="form-label">Zip Code:</label>
+                    <br>
+                </div>
+  
+                <div class="password">
+                    <span id="passwordError" class="error"></span><br>
+                    <input type="password" id="password" placeholder="Password" class="form-input"> 
+                    <label class="form-label">Password:</label><br>
+                </div>
+  
+               <div class="password-reset">
+                <span id="passwordConfirmationError" class="error"></span><br>  
+                <input type="password" id="passwordConfirmation" placeholder="Confirm-Password" class="form-input">
+                <label class="form-label">Confirm Password:</label>
+                <br>
+               </div>
+               </div>
+  
+                <div class="form-end">
+                    <div class="error-message">Error-Message</div>
+                    <button type="submit" class="btn">Create Account</button>
+                    <h3 class="">Already have an Account? <a href="" class="login" target="_blank">Login</a></h3>
+                </div>
+              </div>
+        </div>             
+        <div id="submitted" style="display: none">
+            <h4 class="success"> Success Message</h4>
+        </div>
+        </div> 
+        <script src="/index.js"></script>
+    </body>
+</html>
